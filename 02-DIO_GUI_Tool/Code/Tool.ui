@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);
+</string>
+  </property>
+  <widget class="QGroupBox" name="mainGroup">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>641</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Pin 0</string>
+   </property>
+   <widget class="QGroupBox" name="outGroup">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>40</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Output Level</string>
+    </property>
+    <widget class="QRadioButton" name="highBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>97</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="lowBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>97</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Low</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="inGroup">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Input Configuration</string>
+    </property>
+    <widget class="QRadioButton" name="pullBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>97</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pull-up</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="impedBtn">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>High Impedance</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="pinNameLbl">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pin Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pinNameTxt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Enter Pin Value</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="defaultBtn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>250</y>
+      <width>301</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use Default Name</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>221</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mode</string>
+    </property>
+    <widget class="QRadioButton" name="outBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>97</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Output</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="inBtn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>97</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Input</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="pathLbl">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>400</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Output Path</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pathTxt">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>641</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="CreateButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>500</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(35, 35, 35);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Creat New</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="PinSelect_comboBox">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>92</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Pin0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin12</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin13</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin14</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin15</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin16</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin17</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin18</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin19</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin20</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin21</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pin8</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="SelectButton">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>20</y>
+     <width>112</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LoadButton">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>500</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(35, 35, 35);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SaveButton">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>500</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(35, 35, 35);
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="ConfigDisplay">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>100</y>
+     <width>211</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>80</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Selected Configuratons</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>outBtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>inGroup</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>510</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inBtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>outGroup</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>510</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>outBtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>outGroup</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>510</x>
+     <y>95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>defaultBtn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pinNameTxt</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SelectButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ConfigDisplay</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>775</x>
+     <y>310</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
