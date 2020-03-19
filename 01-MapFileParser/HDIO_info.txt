@@ -1,0 +1,12 @@
+
+
+            ***** HDIO component Info *****
+
+ Size of .text   section in HDIO component is = 1170 Bytes
+ Size of .rodata section in HDIO component is = 40 Bytes
+
+ Size of .data   section in HDIO component is = 24 Bytes
+ Size of .bss    section in HDIO component is = 108 Bytes
+
+-> Size of ROM in HDIO component is = 1210 Bytes
+-> Size of RAM in HDIO component is = 132 Bytes

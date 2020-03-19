@@ -1,0 +1,12 @@
+
+
+            ***** MREGREF component Info *****
+
+ Size of .text   section in MREGREF component is = 502 Bytes
+ Size of .rodata section in MREGREF component is = 0 Bytes
+
+ Size of .data   section in MREGREF component is = 52 Bytes
+ Size of .bss    section in MREGREF component is = 36 Bytes
+
+-> Size of ROM in MREGREF component is = 502 Bytes
+-> Size of RAM in MREGREF component is = 88 Bytes

@@ -1,0 +1,12 @@
+
+
+            ***** LDEM component Info *****
+
+ Size of .text   section in LDEM component is = 830 Bytes
+ Size of .rodata section in LDEM component is = 8 Bytes
+
+ Size of .data   section in LDEM component is = 0 Bytes
+ Size of .bss    section in LDEM component is = 0 Bytes
+
+-> Size of ROM in LDEM component is = 838 Bytes
+-> Size of RAM in LDEM component is = 0 Bytes

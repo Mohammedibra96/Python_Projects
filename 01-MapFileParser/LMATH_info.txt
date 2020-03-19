@@ -1,0 +1,12 @@
+
+
+            ***** LMATH component Info *****
+
+ Size of .text   section in LMATH component is = 2826 Bytes
+ Size of .rodata section in LMATH component is = 8 Bytes
+
+ Size of .data   section in LMATH component is = 0 Bytes
+ Size of .bss    section in LMATH component is = 0 Bytes
+
+-> Size of ROM in LMATH component is = 2834 Bytes
+-> Size of RAM in LMATH component is = 0 Bytes

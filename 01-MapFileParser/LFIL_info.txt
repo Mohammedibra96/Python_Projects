@@ -1,0 +1,12 @@
+
+
+            ***** LFIL component Info *****
+
+ Size of .text   section in LFIL component is = 1216 Bytes
+ Size of .rodata section in LFIL component is = 16 Bytes
+
+ Size of .data   section in LFIL component is = 0 Bytes
+ Size of .bss    section in LFIL component is = 0 Bytes
+
+-> Size of ROM in LFIL component is = 1232 Bytes
+-> Size of RAM in LFIL component is = 0 Bytes
